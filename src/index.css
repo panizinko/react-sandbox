@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply h-full overflow-x-hidden;
+}
+
+body {
+  @apply overflow-y-auto;
+  /* Prevent pull-to-refresh on iOS */
+  overscroll-behavior-y: none;
+}
+
+/* Optional: Improve touch scrolling on iOS */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
